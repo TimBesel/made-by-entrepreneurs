@@ -1,0 +1,70 @@
+:root {
+  --nav-item-height: 50px;
+  --nav-sub-item-height: 30px;
+  --nav-width: 250px;
+
+  /* --------- Should be the same */
+  --nav-collapse-width: 70px;
+  --nav-icon-width: 70px;
+  /* -------------------------- */
+
+  --header-height: 60px;
+
+  /* =========== COLORS =========== */
+  --container-color: #1e1e2f;
+  --background-color: #27293d;
+  --highlight-color: #3ca574;
+  --text-color: white;
+  --hover-color: #13131f;
+
+  /* =========== Font =========== */
+  --font-family-normal: 'Work Sans', sans-serif;
+
+  --sub-icon-size-medium: 0.9rem;
+  --icon-size-medium: 1.2rem;
+  --icon-size-small: 0.6rem;
+  --font-size-medium: 0.9rem;
+  --font-size-small: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --nav-width: 100vw;
+    --nav-collapse-width: 0px;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--font-family-normal);
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  height: var(--nav-item-height);
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav__link:hover {
+  background-color: var(--highlight-color);
+}
+
+.nav__link i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__icon {
+  font-size: var(--icon-size-medium);
+  height: var(--nav-item-height);
+  width: var(--nav-collapse-width);
+  min-width: var(--nav-icon-width);
+}
+
+.nav__name {
+  font-size: var(--font-size-medium);
+  white-space: nowrap;
+}
