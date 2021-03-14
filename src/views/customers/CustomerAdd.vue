@@ -3,18 +3,19 @@
     <default-button title="Cancle"></default-button>
     <icon-button title="Next"></icon-button>
   </toolbar>
+  <vertical-stepper></vertical-stepper>
   <el-form label-width="200px" class="customer-form">
-    
     <customer-invoice-header></customer-invoice-header>
   </el-form>
 </template>
 
 <script>
-import '../../components/layout/slider/SideMenu/var.css';
-import Toolbar from '../../components/layout/Topbar';
-import DefaultButton from '../../components/UI/Button/DefaultButton.vue';
-import IconButton from '../../components/UI/Button/IconButton';
-import CustomerInvoiceHeader from '../../components/layout/customerNewStepOne/CustomerInvoiceHeader';
+import "../../components/layout/slider/SideMenu/var.css";
+import Toolbar from "../../components/layout/Topbar";
+import DefaultButton from "../../components/UI/Button/DefaultButton.vue";
+import IconButton from "../../components/UI/Button/IconButton";
+import CustomerInvoiceHeader from "../../components/layout/customerNewStepOne/CustomerInvoiceHeader";
+import VerticalStepper from "../../components/UI/Button/StepBar/VerticalStepper.vue";
 
 export default {
   components: {
@@ -22,13 +23,14 @@ export default {
     IconButton,
     DefaultButton,
     CustomerInvoiceHeader,
+    VerticalStepper,
   },
 };
 </script>
 
 <style scoped>
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .el-step__icon {
