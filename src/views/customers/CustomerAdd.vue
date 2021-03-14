@@ -4,6 +4,7 @@
     <icon-button title="Next"></icon-button>
   </toolbar>
   <el-form label-width="200px" class="customer-form">
+    
     <customer-invoice-header></customer-invoice-header>
   </el-form>
 </template>
