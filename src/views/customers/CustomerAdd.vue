@@ -15,7 +15,7 @@ import Toolbar from "../../components/layout/Topbar";
 import DefaultButton from "../../components/UI/Button/DefaultButton.vue";
 import IconButton from "../../components/UI/Button/IconButton";
 import CustomerInvoiceHeader from "../../components/layout/customerNewStepOne/CustomerInvoiceHeader";
-import VerticalStepper from "../../components/UI/Button/StepBar/VerticalStepper.vue";
+import VerticalStepper from "../../components/UI/Stepper/VerticalStepper";
 
 export default {
   components: {
