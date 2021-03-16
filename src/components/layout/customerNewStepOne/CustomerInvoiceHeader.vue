@@ -76,10 +76,20 @@
 </template>
 
 <script>
-import DefaultInput from '../../UI/Input/DefaultInput.vue';
-import TheTabbar from '../../UI/Tabbar/TheTabbar';
+import DefaultInput from "../../UI/Input/DefaultInput.vue";
+import TheTabbar from "../../UI/Tabbar/TheTabbar";
 
 export default {
+  data() {
+    return {
+      activeIndex: 1,
+    };
+  },
+  methods: {
+    setSetpActive() {
+      this.activeIndex++;
+    },
+  },
   components: {
     TheTabbar,
     DefaultInput,
@@ -89,9 +99,9 @@ export default {
 
 <style scoped>
 .box-card {
-  height: 500px;
-  width: calc(100% - 200px);
-  padding: 0 100px 0 100px;
+  padding: 0;
+  height: auto;
+  width: 100%;
   border: none;
 }
 
@@ -121,8 +131,7 @@ export default {
 
 @media screen and (max-width: 600px) {
   .box-card {
-    padding: 0 5% 0 5%;
-    width: 90%;
+    width: 100%;
   }
 
   .row {
@@ -134,7 +143,6 @@ export default {
   }
 
   .column:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 </style>

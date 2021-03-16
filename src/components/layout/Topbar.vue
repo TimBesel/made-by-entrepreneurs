@@ -15,15 +15,15 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Toolbar Title',
+      default: "Toolbar Title",
     },
   },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .toolbar {
@@ -34,17 +34,17 @@ export default {
   justify-content: space-between;
   background-color: #2e3047;
   border-bottom: 1px solid #1e1e2f;
-}
 
-.toolbar h1 {
-  color: white;
-  font-size: 1.3rem;
-  padding-left: 30px;
-}
+  h1 {
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 30px;
+  }
 
-.toolbar__tools {
-  display: flex;
-  column-gap: 15px;
+  .toolbar__tools {
+    display: flex;
+    column-gap: 15px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -52,8 +52,7 @@ export default {
     height: 40px;
     justify-content: center;
   }
-
-  .toolbar h1 {
+  h1 {
     font-size: 1rem;
     padding-left: 0;
   }

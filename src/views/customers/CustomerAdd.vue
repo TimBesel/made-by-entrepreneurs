@@ -3,9 +3,14 @@
     <default-button title="Cancle"></default-button>
     <icon-button title="Next"></icon-button>
   </toolbar>
-  <vertical-stepper></vertical-stepper>
   <el-form label-width="200px" class="customer-form">
-    <customer-invoice-header></customer-invoice-header>
+    <vertical-stepper>
+      <vertical-step :stepIndex="1" title="Contact Header" v-model="activeIndex">
+        <customer-invoice-header></customer-invoice-header>
+      </vertical-step>
+      <vertical-step :stepIndex="2" title="Customer Informations" v-model="activeIndex"></vertical-step>
+      <vertical-step :stepIndex="3" title="Custome Informationfields" v-model="activeIndex"></vertical-step>
+    </vertical-stepper>
   </el-form>
 </template>
 
@@ -16,6 +21,7 @@ import DefaultButton from "../../components/UI/Button/DefaultButton.vue";
 import IconButton from "../../components/UI/Button/IconButton";
 import CustomerInvoiceHeader from "../../components/layout/customerNewStepOne/CustomerInvoiceHeader";
 import VerticalStepper from "../../components/UI/Stepper/VerticalStepper";
+import VerticalStep from "../../components/UI/Stepper/VerticalStep";
 
 export default {
   components: {
@@ -24,6 +30,7 @@ export default {
     DefaultButton,
     CustomerInvoiceHeader,
     VerticalStepper,
+    VerticalStep,
   },
 };
 </script>
@@ -45,7 +52,7 @@ export default {
   width: 840px;
   background-color: #2e3047;
   display: flex;
-  align-items: center;
+  padding-top: 20px;
 }
 
 .customerEditTopbar {

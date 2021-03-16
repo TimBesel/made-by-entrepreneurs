@@ -1,7 +1,16 @@
-// colors
+@font-face {
+  font-family: nos;
+  src: url(/font/Franklin-Gothic-Demi-Cond-Regular.ttf);
+}
+
+// Colors
 
 $container-color: #1e1e2f;
 $background-color: #27293d;
 $highlight-color: #3ca574;
 $text-color: white;
 $hover-color: #13131f;
+
+// Font
+
+$regular-font: nos;
