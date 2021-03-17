@@ -44,6 +44,8 @@ export default {
 
 .header {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: #1e1e2f;
@@ -51,6 +53,7 @@ export default {
 }
 
 .main {
+  margin-top: 60px;
   width: calc(100vw - 70px);
   height: calc(100vh - 60px);
   background-color: #27293d;
@@ -59,6 +62,12 @@ export default {
 @media screen and (max-width: 700px) {
   .header {
     justify-content: center;
+  }
+
+  .main {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    height: calc(100vh - 130px);
   }
 
   .logo {

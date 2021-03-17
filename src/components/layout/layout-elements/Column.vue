@@ -1,7 +1,7 @@
 <template>
-  <el-row :gutter="40" class="row">
+  <el-col :span="12" class="column">
     <slot></slot>
-  </el-row>
+  </el-col>
 </template>
 
 <script>
@@ -9,13 +9,9 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.row {
-  margin-bottom: 30px;
-}
-
 @media screen and (max-width: 600px) {
-  .row {
-    margin-bottom: 30px;
+  .column {
+    width: 100%;
   }
 }
 </style>

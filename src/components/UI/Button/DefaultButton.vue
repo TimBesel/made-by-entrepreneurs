@@ -40,7 +40,7 @@ export default {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #1e1e2f;
+  color: white;
 }
 .btn {
   height: 40px;
@@ -51,7 +51,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2e3047;
+  background-color: #1e1e2f;
   transition: 0.3s;
   transition-property: background-color;
 }

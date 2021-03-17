@@ -58,7 +58,7 @@ export default {
   }
 
   .toolbar__tools {
-    height: 80px;
+    height: 70px;
     width: 100vw;
     background-color: #2e3047;
     position: fixed;
