@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import TheLogo from './components/layout/TheLogo';
-import NavBar from './components/layout/slider/SideMenu/SideMenu';
+import TheLogo from "./components/layout/TheLogo";
+import NavBar from "./components/layout/SideMenu/SideMenu";
 
 export default {
   data() {
@@ -65,5 +65,4 @@ export default {
     width: 250px;
   }
 }
-
 </style>

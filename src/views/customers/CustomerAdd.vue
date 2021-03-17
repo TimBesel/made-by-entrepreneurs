@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import "../../components/layout/slider/SideMenu/var.css";
 import Toolbar from "../../components/layout/Topbar";
 import DefaultButton from "../../components/UI/Button/DefaultButton.vue";
 import IconButton from "../../components/UI/Button/IconButton";
