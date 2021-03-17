@@ -43,12 +43,9 @@ export default {
 
   .toolbar__tools {
     display: flex;
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
-    -moz-column-gap: 30px;
-    -webkit-column-gap: 30px;
-    column-gap: 30px;
+    ::v-deep > * {
+      margin-right: 20px;
+    }
   }
 }
 

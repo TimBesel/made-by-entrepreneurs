@@ -4,7 +4,7 @@
       <default-button title="Cancle"></default-button>
       <icon-button title="Next"></icon-button>
     </template>
-    <template v-slot:PageContent> </template>
+    <template v-slot:PageContent></template>
   </input-page-layout>
 </template>
 
