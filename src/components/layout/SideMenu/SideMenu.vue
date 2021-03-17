@@ -51,7 +51,9 @@ export default {
 
 <style scoped>
 .nav {
-  margin-top: 60px;
+  position: fixed;
+  top: 60px;
+  height: calc(100vh - 60px);
   z-index: 10;
   background-color: var(--container-color);
   transition: 0.4s;

@@ -43,7 +43,12 @@ export default {
 
   .toolbar__tools {
     display: flex;
-    column-gap: 15px;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
   }
 }
 
