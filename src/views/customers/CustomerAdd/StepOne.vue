@@ -76,8 +76,8 @@
 </template>
 
 <script>
-import DefaultInput from "../../UI/Input/DefaultInput.vue";
-import TheTabbar from "../../UI/Tabbar/TheTabbar";
+import DefaultInput from "../../../components/UI/Input/DefaultInput";
+import TheTabbar from "../../../components/UI/Tabbar/TheTabbar";
 
 export default {
   data() {

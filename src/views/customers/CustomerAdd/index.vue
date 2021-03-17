@@ -6,7 +6,7 @@
   <el-form label-width="200px" class="customer-form">
     <vertical-stepper>
       <vertical-step :stepIndex="1" title="Contact Header" v-model="activeIndex">
-        <customer-invoice-header></customer-invoice-header>
+        <step-one></step-one>
       </vertical-step>
       <vertical-step :stepIndex="2" title="Customer Informations" v-model="activeIndex"></vertical-step>
       <vertical-step :stepIndex="3" title="Custome Informationfields" v-model="activeIndex"></vertical-step>
@@ -15,19 +15,19 @@
 </template>
 
 <script>
-import Toolbar from "../../components/layout/Topbar";
-import DefaultButton from "../../components/UI/Button/DefaultButton.vue";
-import IconButton from "../../components/UI/Button/IconButton";
-import CustomerInvoiceHeader from "../../components/layout/customerNewStepOne/CustomerInvoiceHeader";
-import VerticalStepper from "../../components/UI/Stepper/VerticalStepper";
-import VerticalStep from "../../components/UI/Stepper/VerticalStep";
+import Toolbar from "../../../components/layout/Topbar";
+import DefaultButton from "../../../components/UI/Button/DefaultButton";
+import IconButton from "../../../components/UI/Button/IconButton";
+import StepOne from "./StepOne.vue";
+import VerticalStepper from "../../../components/UI/Stepper/VerticalStepper";
+import VerticalStep from "../../../components/UI/Stepper/VerticalStep";
 
 export default {
   components: {
     Toolbar,
     IconButton,
     DefaultButton,
-    CustomerInvoiceHeader,
+    StepOne,
     VerticalStepper,
     VerticalStep,
   },
