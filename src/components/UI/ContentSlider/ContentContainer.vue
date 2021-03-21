@@ -11,8 +11,11 @@ export default {
       type: Number,
       default: 1,
     },
+    cIndex: {
+      type: Number,
+      required: true,
+    },
   },
-  inject: ["cIndex"],
 };
 </script>
 

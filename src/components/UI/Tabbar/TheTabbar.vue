@@ -1,17 +1,14 @@
 <template>
   <div class="tabbar">
-    <dir class="tabbar__tabs">
+    <div class="tabbar__tabs">
       <button type="button" @click="firstActive = true" :class="{ active: firstActive }">
         <span>Company</span>
       </button>
       <button type="button" @click="firstActive = false" :class="{ active: !firstActive }">
         <span>Privat</span>
       </button>
-      <span
-        class="tab__indicator"
-        :class="{ one: firstActive, two: !firstActive }"
-      ></span>
-    </dir>
+      <span class="tab__indicator" :class="{ one: firstActive, two: !firstActive }"></span>
+    </div>
     <div class="tabbar__content">
       <div class="tabbar__tab" :class="{ active: firstActive }">
         <slot name="tab1"></slot>
@@ -35,7 +32,7 @@ export default {
 
 <style scoped>
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.9rem;
   color: white;
   margin: 0;
@@ -120,5 +117,4 @@ export default {
     padding-bottom: 100px;
   }
 }
-
 </style>

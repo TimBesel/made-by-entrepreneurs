@@ -3,14 +3,14 @@
     <div class="content-slider_header">
       <h3>Address Header</h3>
     </div>
-    <content-container>
+    <content-container :cIndex="index">
       <slot name="content1"></slot>
     </content-container>
-    <content-container :index="2">
-      <slot name="content2"></slot>
+    <content-container :cIndex="index" :index="2">
+      <slot name="content2">Content 2</slot>
     </content-container>
-    <content-container :index="3">
-      <slot name="content3"></slot>
+    <content-container :cIndex="index" :index="3">
+      <slot name="content3">Content 3</slot>
     </content-container>
   </div>
 </template>
@@ -25,19 +25,8 @@ export default {
       default: 1,
     },
   },
-  provide() {
-    return {
-      cIndex: this.getCurrentIndex,
-    };
-  },
   components: {
     ContentContainer,
-  },
-  computed: {
-    getCurrentIndex() {
-      console.log(this.index);
-      return this.index;
-    },
   },
 };
 </script>

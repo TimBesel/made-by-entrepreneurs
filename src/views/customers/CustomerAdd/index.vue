@@ -2,7 +2,7 @@
   <input-page-layout>
     <template #ToolbarContent>
       <default-button title="Cancle"></default-button>
-      <icon-button title="Next"></icon-button>
+      <icon-button title="Next" @click="next"></icon-button>
     </template>
     <template v-slot:PageContent>
       <content-slider :index="contentSliderIndex">
@@ -34,10 +34,9 @@ export default {
     ContentSlider,
     TheTabbar,
   },
-  methodes: {
+  methods: {
     next() {
       this.contentSliderIndex++;
-      console.log(this.contentSliderIndex);
     },
   },
 };

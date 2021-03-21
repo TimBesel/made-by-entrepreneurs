@@ -35,11 +35,6 @@ export default {
       type: String,
       default: "el-icon-right",
     },
-    methods: {
-      hoverButton() {
-        console.log("click");
-      },
-    },
   },
 };
 </script>
