@@ -42,6 +42,11 @@ export default {
   margin: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .header {
   display: flex;
   position: fixed;

@@ -53,10 +53,11 @@ export default {
   .toolbar {
     height: 40px;
     justify-content: center;
-  }
-  h1 {
-    font-size: 1rem;
-    padding-left: 0;
+    border-bottom: 1px solid #27293d;
+    h1 {
+      font-size: 1.2rem;
+      color: #1e1e2f;
+    }
   }
 
   .toolbar__tools {

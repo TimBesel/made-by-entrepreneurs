@@ -11,7 +11,7 @@
             <sub-menu icon="el-icon-s-custom" title="Costumers" link="/customer">
               <sub-menu-item icon="el-icon-office-building" link="/customer/company">Company</sub-menu-item>
               <sub-menu-item icon="el-icon-plus" link="/customer/new">Add</sub-menu-item>
-              <sub-menu-item icon="el-icon-edit-outline" link="/customer/customer">customize</sub-menu-item>
+              <sub-menu-item icon="el-icon-edit-outline" link="/customer/customize">customize</sub-menu-item>
             </sub-menu>
             <sub-menu icon="el-icon-money" title="Invoice" link="/invoice">
               <sub-menu-item icon="el-icon-document-add" link="/invoice/new">New</sub-menu-item>

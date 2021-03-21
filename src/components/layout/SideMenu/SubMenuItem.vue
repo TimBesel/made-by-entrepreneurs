@@ -1,26 +1,22 @@
 <template>
-  <router-link
-    :to="link"
-    class="nav__dropdown-item"
-    :class="{ 'exact-active': isRoutActive }"
-  >
+  <router-link :to="link" class="nav__dropdown-item" :class="{ 'exact-active': isRoutActive }">
     <i class="nav__sub-icon" :class="icon"></i>
     <span class="nav__name nav__sub-item-name"><slot>Sub-Menu-Item</slot></span>
   </router-link>
 </template>
 
 <script>
-import './var.css';
+import "./var.css";
 
 export default {
   props: {
     icon: {
       type: String,
-      default: 'el-icon-eleme',
+      default: "el-icon-eleme",
     },
     link: {
       type: String,
-      default: '#',
+      default: "#",
     },
   },
   computed: {

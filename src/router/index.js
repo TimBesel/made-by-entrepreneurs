@@ -27,6 +27,7 @@ const routes = [
     name: "Customer",
     component: Customers,
   },
+
   { path: "/customer/company", component: CustomersCompany },
   { path: "/customer/new", component: CustomerAdd },
   { path: "/customer/customize", component: CustomerCustomize },

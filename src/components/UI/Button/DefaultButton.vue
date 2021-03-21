@@ -28,9 +28,6 @@ export default {
       type: String,
       default: "Button",
     },
-    methods: {
-      hoverButton() {},
-    },
   },
 };
 </script>

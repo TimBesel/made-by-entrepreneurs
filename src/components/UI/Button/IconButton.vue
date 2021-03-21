@@ -17,26 +17,28 @@ export default {
   props: {
     primaryColor: {
       type: String,
-      default: '#2c7855',
+      default: "#2c7855",
     },
     secondaryColor: {
       type: String,
-      default: '#3ca574',
+      default: "#3ca574",
     },
     fontColor: {
       type: String,
-      default: 'white',
+      default: "white",
     },
     title: {
       type: String,
-      default: 'Button',
+      default: "Button",
     },
     icon: {
       type: String,
-      default: 'el-icon-right',
+      default: "el-icon-right",
     },
     methods: {
-      hoverButton() {},
+      hoverButton() {
+        console.log("click");
+      },
     },
   },
 };
@@ -44,7 +46,7 @@ export default {
 
 <style scoped>
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   color: white;
