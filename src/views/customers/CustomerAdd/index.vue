@@ -1,13 +1,23 @@
 <template>
   <input-page-layout>
     <template #ToolbarContent>
-      <default-button title="Cancle"></default-button>
-      <icon-button title="Next" @click="next"></icon-button>
+      <icon-button
+        title="Back"
+        primaryColor="#1e1e2f"
+        secondaryColor="#222236"
+        icon="el-icon-back"
+        @click="toggleBack"
+      ></icon-button>
+      <icon-button title="Next" @click="toggleNext"></icon-button>
     </template>
     <template v-slot:PageContent>
       <content-slider :index="contentSliderIndex">
         <template v-slot:content1>
-          <the-tabbar></the-tabbar>
+          <the-tabbar>
+            <template #tab1>
+              <el-input placeholder="Please input" v-model="input"></el-input>
+            </template>
+          </the-tabbar>
         </template>
       </content-slider>
     </template>
@@ -16,7 +26,6 @@
 
 <script>
 import InputPageLayout from "../../../components/layout/PageLayout/InputPageLayout";
-import DefaultButton from "../../../components/UI/Button/DefaultButton";
 import IconButton from "../../../components/UI/Button/IconButton";
 import ContentSlider from "../../../components/UI/ContentSlider/ContentSlider";
 import TheTabbar from "../../../components/UI/Tabbar/TheTabbar.vue";
@@ -30,13 +39,16 @@ export default {
   components: {
     InputPageLayout,
     IconButton,
-    DefaultButton,
     ContentSlider,
     TheTabbar,
   },
   methods: {
-    next() {
-      this.contentSliderIndex++;
+    // TODO make content slider dynamic
+    toggleNext() {
+      this.contentSliderIndex < 3 ? this.contentSliderIndex++ : (this.contentSliderIndex = 3);
+    },
+    toggleBack() {
+      this.contentSliderIndex > 1 ? this.contentSliderIndex-- : (this.contentSliderIndex = 1);
     },
   },
 };

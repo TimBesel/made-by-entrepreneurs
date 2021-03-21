@@ -1,7 +1,7 @@
 <template>
-  <div class="btn" :class="{ hovering: isHovering }">
+  <div class="btn" :class="{ hovering: isHovering }" :style="{ 'background-color': primaryColor }">
     <i class="el-icon-right" :class="icon"></i>
-    <button>
+    <button :style="{ 'background-color': secondaryColor }">
       <span>{{ title }}</span>
     </button>
   </div>
@@ -35,6 +35,9 @@ export default {
       type: String,
       default: "el-icon-right",
     },
+  },
+  methodes: {
+    changeColor() {},
   },
 };
 </script>
